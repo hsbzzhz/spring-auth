@@ -1,0 +1,46 @@
+POST http://localhost:8080/api/user/login
+Content-Type: application/json
+
+{
+  "username":"aaa",
+  "password": "1234"
+}
+
+###
+
+
+
+GET http://localhost:8080/api/user/info
+Accept: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWFhIiwiZXhwIjoxNjQ3MDUyMTE4fQ.sUKTpPR-k4AIzXG9C_rB_mFxV5uIlree99b_m9g2vdjWMK-QSGAi2rKY-ArZC0btMdRjq0LPIlbz8Ks6G8hJYQ
+###
+
+
+POST http://localhost:8080/api/role
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWFhIiwiZXhwIjoxNjQ3MDUyMTE4fQ.sUKTpPR-k4AIzXG9C_rB_mFxV5uIlree99b_m9g2vdjWMK-QSGAi2rKY-ArZC0btMdRjq0LPIlbz8Ks6G8hJYQ
+
+{
+  "rolename": "super",
+  "data": "666"
+}
+
+
+###
+GET http://localhost:8080/api/roles
+Accept: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWFhIiwiZXhwIjoxNjQ3MDUyMTE4fQ.sUKTpPR-k4AIzXG9C_rB_mFxV5uIlree99b_m9g2vdjWMK-QSGAi2rKY-ArZC0btMdRjq0LPIlbz8Ks6G8hJYQ
+
+
+###
+
+
+###
+PUT http://localhost:8080/api/permission/aaa
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWFhIiwiZXhwIjoxNjQ3MDUyMTE4fQ.sUKTpPR-k4AIzXG9C_rB_mFxV5uIlree99b_m9g2vdjWMK-QSGAi2rKY-ArZC0btMdRjq0LPIlbz8Ks6G8hJYQ
+
+{
+  "rolename": "super",
+  "data": 666
+}

@@ -1,3 +1,4 @@
+### POST Request 用户登陆
 POST http://localhost:8080/api/user/login
 Content-Type: application/json
 
@@ -6,15 +7,13 @@ Content-Type: application/json
   "password": "1234"
 }
 
-###
-
-
+### Get Request 获取用户信息，包括权限信息
 
 GET http://localhost:8080/api/user/info
 Accept: application/json
 Authorization: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWFhIiwiZXhwIjoxNjQ3MDUyMTE4fQ.sUKTpPR-k4AIzXG9C_rB_mFxV5uIlree99b_m9g2vdjWMK-QSGAi2rKY-ArZC0btMdRjq0LPIlbz8Ks6G8hJYQ
-###
 
+### POST Request 添加新的role
 
 POST http://localhost:8080/api/role
 Content-Type: application/json
@@ -26,16 +25,13 @@ Authorization: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWFhIiwiZXhw
 }
 
 
-###
+### 查看所有的Role
 GET http://localhost:8080/api/roles
 Accept: application/json
 Authorization: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWFhIiwiZXhwIjoxNjQ3MDUyMTE4fQ.sUKTpPR-k4AIzXG9C_rB_mFxV5uIlree99b_m9g2vdjWMK-QSGAi2rKY-ArZC0btMdRjq0LPIlbz8Ks6G8hJYQ
 
 
-###
-
-
-###
+### 给用户aaa添加super的role
 PUT http://localhost:8080/api/permission/aaa
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWFhIiwiZXhwIjoxNjQ3MDUyMTE4fQ.sUKTpPR-k4AIzXG9C_rB_mFxV5uIlree99b_m9g2vdjWMK-QSGAi2rKY-ArZC0btMdRjq0LPIlbz8Ks6G8hJYQ

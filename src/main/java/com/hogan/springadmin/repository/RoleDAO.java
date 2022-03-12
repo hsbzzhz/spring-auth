@@ -15,7 +15,7 @@ public class RoleDAO {
 
     public RoleDAO() {
         arr.add(new RoleDO("admin", "123"));
-        arr.add(new RoleDO("sals", "123"));
+        arr.add(new RoleDO("sales", "123"));
         arr.add(new RoleDO("guest", "123"));
     }
 
@@ -34,6 +34,7 @@ public class RoleDAO {
     }
 
     public boolean insert(RoleDO RoleDO) throws RuntimeException {
+        // 不可重复创建角色
         for (RoleDO role : arr) {
             if (Objects.equals(RoleDO.getRolename(), role.getRolename())) {
                 throw new RuntimeException("角色重复创建");
